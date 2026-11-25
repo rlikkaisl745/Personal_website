@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Syler's Page</title>
+
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Arial, sans-serif;
+      overflow-x: hidden;
+    }
+
+    #BG {
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    nav {
+      width: 100%;
+      background: #33333381;
+    }
+
+    nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content:left;
+      align-items: center;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      min-height: 50px;
+    }
+
+    nav li a {
+      display: block;
+      padding: 14px 16px;
+      color: azure;
+      text-align: center;
+      text-decoration: none;
+      font-size: 15px;
+    }
+
+    nav li a:hover {
+      background: #111;
+    }
+
+    .profile-card,
+    .TechnicalSkills {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      width: calc(100% - 120px);
+      margin: 20px 60px;
+      padding: 25px;
+      border: 1px solid rgb(32, 255, 50);
+      border-radius: 15px;
+      color: rgb(253, 224, 239);
+      background: rgba(0, 41, 18, 0.25);
+      backdrop-filter: blur(12px);
+      animation: fade 1s ease-in-out;
+    }
+
+    .profile-card h1,
+    .TechnicalSkills h1,
+    .Skills h1 {
+      color: rgb(247, 175, 211);
+      font-family: "Press Start 2P", system-ui;
+    }
+
+    .profile-card h1,
+    .TechnicalSkills h1 {
+      padding: 20px;
+      text-align: left;
+    }
+
+    .profile-card p,
+    .p2 {
+      flex: 1;
+      margin: 0;
+      padding: 10px;
+      color: rgb(253, 224, 239);
+      font-size: 20px;
+      line-height: 1.6;
+    }
+
+    .profile-pic {
+      width: 250px;
+      height: 300px;
+      object-fit: cover;
+      border: 2px solid rgb(32, 255, 50);
+      border-radius: 15px;
+    }
+
+    .Skills h1,
+    .Skills h2 {
+      margin: 20px 60px;
+      padding: 30px;
+      border: 1px solid rgb(32, 255, 50);
+      border-radius: 15px;
+      color: rgb(247, 175, 211);
+      background: rgba(0, 41, 18, 0.25);
+      backdrop-filter: blur(12px);
+      text-align: center;
+    }
+
+    .Skills h2 {
+      font-family: Arial, sans-serif;
+    }
+
+    .Skills a {
+      display: block;
+      width: fit-content;
+      max-width: 90%;
+      margin: 20px auto;
+      padding: 10px;
+      border: 1px solid rgb(32, 255, 50);
+      border-radius: 15px;
+      background: rgba(0, 41, 18, 0.25);
+      text-align: center;
+    }
+
+    .Skills a:hover {
+      background: rgba(0, 255, 110, 0.219);
+    }
+
+    .logo {
+      display: block;
+      width: 600px;
+      max-width: 100%;
+      height: auto;
+    }
+
+    @keyframes fade {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    /* TABLET */
+    @media screen and (max-width: 900px) {
+          nav li a {
+    font-size: 13px;
+  }
+
+  nav li a i {
+    font-size: 15px;
+  }
+      .profile-card,
+      .TechnicalSkills {
+        width: calc(100% - 40px);
+        margin: 20px;
+        padding: 20px;
+      }
+
+      .Skills h1,
+      .Skills h2 {
+        margin: 20px;
+        padding: 20px;
+      }
+
+      .profile-card h1,
+      .TechnicalSkills h1 {
+        font-size: 24px;
+      }
+
+      .profile-card p,
+      .p2 {
+        font-size: 18px;
+      }
+
+      .profile-pic {
+        width: 220px;
+        height: 270px;
+      }
+    }
+
+    /* MOBILE */
+    @media screen and (max-width: 600px) {
+         nav {
+    padding: 6px 2px;
+  }
+
+  nav li a {
+    min-height: 52px;
+    font-size: 12px;
+  }
+
+  nav li a i {
+    font-size: 15px;
+  }
+      .profile-card,
+      .TechnicalSkills {
+        flex-direction: column;
+        width: calc(100% - 20px);
+        margin: 10px;
+        padding: 15px;
+        text-align: center;
+      }
+
+      .profile-pic {
+        order: -1;
+        width: 180px;
+        height: 220px;
+      }
+
+      .profile-card h1,
+      .TechnicalSkills h1,
+      .Skills h1,
+      .Skills h2 {
+        width: 100%;
+        margin: 0;
+        padding: 15px 5px;
+        font-size: 19px;
+        text-align: center;
+      }
+
+      .profile-card p,
+      .p2 {
+        width: 100%;
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: left;
+      }
+
+      .Skills h1,
+      .Skills h2 {
+        margin: 10px;
+      }
+
+      .Skills a {
+        width: 90%;
+        margin: 15px auto;
+      }
+    }
+
+    /* SMALL MOBILE */
+    @media screen and (max-width: 380px) {
+         nav li a {
+    font-size: 10px;
+  }
+
+  nav li a i {
+    font-size: 14px;
+  }
+      .profile-pic {
+        width: 150px;
+        height: 190px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <video autoplay muted loop id="BG">
+    <source src="BG.mp4" type="video/mp4">
+  </video>
+
+  <nav>
+    <ul>
+      <li>
+        <a href="Syler.html">
+          <i class="fa-solid fa-house"></i> Home
+        </a>
+      </li>
+
+      <li>
+        <a href="aboutme.html">
+          <i class="fa-solid fa-font"></i> About
+        </a>
+      </li>
+
+      <li>
+        <a href="skills.html">
+          <i class="fa-solid fa-gears"></i> Skills
+        </a>
+      </li>
+
+      <li>
+        <a href="Portfolio.html">
+          <i class="fa-solid fa-folder"></i> Portfolio
+        </a>
+      </li>
+
+      <li>
+        <a href="contact.html">
+          <i class="fa-solid fa-envelope"></i> Contacts
+        </a>
+      </li>
+
+      <li>
+        <a href="https://www.ciit.edu.ph/homepage/" target="_blank">
+          <i class="fa-solid fa-school"></i> CIIT Homepage
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <section class="profile-card">
+    <h1>ABOUT</h1>
+
+    <p>
+      <b>
+        <i>
+          Hello! I'm Syler Bustarde, a student who is passionate about
+          technology, creativity, and learning new things. I enjoy exploring
+          different ideas, improving my skills, and challenging myself to become
+          a better version of who I am.
+
+          <br><br>
+
+          I believe that every experience is an opportunity to learn and grow.
+          In my free time, I enjoy listening to music, playing games, exploring
+          technology, and doing things that inspire me.
+
+          <br><br>
+
+          My goal is to continue developing my knowledge and skills, especially
+          in technology and web development. I want to turn my ideas into reality
+          and create something meaningful in the future.
+
+          <br><br>
+
+          "Dream big, stay focused, and never stop improving."
+        </i>
+      </b>
+    </p>
+
+    <img src="Syler.png" alt="Syler Bustarde" class="profile-pic">
+  </section>
+
+  <section class="Skills">
+    <h1>SKILLS</h1>
+
+    <h2>
+      <b>COMPUTER PROGRAMMING (C++, Java, HTML, CSS)</b>
+    </h2>
+
+    <a href="https://www.w3schools.com/" target="_blank">
+      <img src="logos.jpg" alt="Programming logos" class="logo">
+    </a>
+  </section>
+
+  <section class="TechnicalSkills">
+    <h1>Technical Skills</h1>
+
+    <p class="p2">
+      <b>
+        <i>
+          I have a strong interest in computer programming and web development,
+          with knowledge of creating and designing websites using HTML and CSS.
+
+          <br><br>
+
+          I also possess a National Certificate II (NC II) in Computer Systems
+          Servicing, demonstrating my knowledge of computer hardware, software
+          installation, troubleshooting, and basic system maintenance.
+
+          <br><br>
+
+          I am continuously developing my technical abilities and expanding my
+          knowledge in information technology.
+        </i>
+      </b>
+    </p>
+  </section>
+
+</body>
+</html>

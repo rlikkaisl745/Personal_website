@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ 
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Arial, sans-serif;
+      color: white;
+      overflow-x: hidden;
+    }
+
+    #BG {
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #33333381;
+}
+ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #111111;
+}
+  ul {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 50px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+ul a { color: azure;}
+ol li{
+    color: antiquewhite;
+    text-align: center;
+    font-size: 30px;
+}
+
+    nav a:hover {
+      background-color: #111;
+    }
+
+    .profile-card {
+      width: min(90%, 850px);
+      margin: 70px auto 30px;
+      padding: 45px 30px;
+      text-align: center;
+      border: 2px solid rgb(32, 255, 50);
+      border-radius: 20px;
+      background: rgba(0, 41, 18, 0.35);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    }
+
+    .profile-card h1 {
+      margin: 0 0 25px;
+      color: rgb(240, 55, 224);
+      font-family: "Press Start 2P", system-ui;
+      font-size: clamp(24px, 5vw, 45px);
+      line-height: 1.5;
+      text-shadow: 0 0 5px white, 0 0 20px rgb(255, 142, 246);
+    }
+
+    .profile-card h2 {
+      margin: 0 0 30px;
+      color: white;
+      font-size: clamp(18px, 3vw, 35px);
+      font-weight: normal;
+      line-height: 1.5;
+    }
+
+    .profile-pic {
+      display: block;
+      width: min(70%, 250px);
+      aspect-ratio: 1 / 1;
+      height: auto;
+      margin: 0 auto;
+      object-fit: cover;
+      border: 5px solid rgba(7, 146, 18, 0.5);
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    footer {
+      padding: 20px 10px;
+      text-align: center;
+      color: white;
+    }
+
+    /* Tablet */
+    @media (max-width: 900px) {
+       nav li a {
+    font-size: 13px;
+  }
+
+  nav li a i {
+    font-size: 15px;
+  }
+      .profile-card {
+        margin-top: 40px;
+        padding: 35px 20px;
+      }
+    }
+
+    /* Mobile */
+    @media (max-width: 600px) {
+        nav {
+    padding: 6px 2px;
+  }
+
+  nav li a {
+    min-height: 52px;
+    font-size: 12px;
+  }
+
+  nav li a i {
+    font-size: 15px;
+  }
+    
+       .profile-card {
+    flex-direction: column;
+    text-align: center;
+    margin: 10px;
+  }
+  .profile-card h1 { text-align: center; }
+  .profile-pic {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    aspect-ratio: 5 / 6;
+    order: -1;
+  }
+    }
+
+    /* Very small phones */
+    @media (max-width: 380px) {
+         nav li a {
+    font-size: 10px;
+  }
+
+  nav li a i {
+    font-size: 14px;
+  }
+      .profile-card h1 {
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+ <title>Syler's Page</title>
+<body>
+
+  <video autoplay muted loop id="BG">
+    <source src="BG.mp4" type="video/mp4">
+  </video>
+
+  <nav>
+    <ul>
+      <li><a href="Syler.html"><i class="fa-solid fa-house"></i> Home</a></li>
+      <li><a href="aboutme.html"><i class="fa-solid fa-font"></i> About</a></li>
+      <li><a href="skills.html"><i class="fa-solid fa-gears"></i> Skills</a></li>
+      <li><a href="Portfolio.html"><i class="fa-solid fa-folder"></i> Portfolio</a></li>
+      <li><a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+      <li>
+        <a href="https://www.ciit.edu.ph/homepage/">
+          <i class="fa-solid fa-school"></i><b>CIIT Homepage</b> 
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="profile-card">
+      <h1>SYLER BUSTARDE PROFILE</h1>
+
+      <h2>
+        <i>CIIT College of Innovation and Integrated Technology</i>
+      </h2>
+
+      <img src="Syler.png" alt="Syler Bustarde" class="profile-pic">
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Syler Bustarde - CS001</p>
+  </footer>
+
+</body>
+</html>

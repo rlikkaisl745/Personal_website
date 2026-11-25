@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style> 
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+* { box-sizing: border-box; }
+/*ABOUT--*/
+.profile-card {
+    display: flex;
+    align-items:center;
+    gap: 30px;
+    border: 1px solid rgb(32, 255, 50);
+    margin: 10px 60px;
+    padding: 25px;
+    background-color:  rgba(0, 41, 18, 0.1);
+    backdrop-filter: blur(12px);
+    border-radius: 15px;
+}
+@keyframes fadeAnimation {
+    0% { opacity: 0;}
+    100% {opacity: 1;}
+}
+.profile-card {
+    animation-name: fadeAnimation;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1s;
+    animation-direction: normal;
+}
+.profile-card h1{
+    color: rgb(247, 175, 211);
+    text-align: left;
+    padding: 30px 50px;
+    font-family: "Press Start 2P", system-ui;
+}
+
+.profile-card p {
+    margin: 0 8px;
+    padding: 10px;
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.profile-pic {
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 2px solid rgb(32, 255, 50);
+}
+p{
+   border: 1px solid rgb(32, 255, 50);
+  margin-top: 10px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 60px;
+  color: rgb(253, 224, 239);
+  text-align: left;
+  padding: 10px;
+}
+.profile-card {
+    display: flex;
+    align-items:center;
+    gap: 30px;
+    border: 1px solid rgb(32, 255, 50);
+    margin: 10px 60px;
+    padding: 25px;
+    background-color:  rgba(0, 41, 18, 0.1);
+    backdrop-filter: blur(12px);
+    border-radius: 15px;
+}
+.profile-card:hover{
+  background-color:  rgba(0, 41, 18, 0.1);
+}
+/* TABLET */
+@media (max-width: 900px) {
+   nav li a {
+    font-size: 13px;
+  }
+
+  nav li a i {
+    font-size: 15px;
+  }
+  .profile-card { margin: 10px 15px; gap: 20px; }
+  .profile-pic { width: 200px; height: 250px; }
+}
+/* MOBILE */
+@media (max-width: 600px) {
+  nav {
+    padding: 6px 2px;
+  }
+
+  nav li a {
+    min-height: 52px;
+    font-size: 12px;
+  }
+
+  nav li a i {
+    font-size: 15px;
+  }
+
+  .profile-card {
+    flex-direction: column;
+    text-align: center;
+    margin: 10px;
+  }
+  .profile-card h1 { text-align: center; }
+  .profile-pic {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    aspect-ratio: 5 / 6;
+    order: -1;
+  }
+}
+
+/*LINKS--*/
+  ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #33333381;
+}
+ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #111111;
+}
+  ul {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 50px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+ul a { color: azure;}
+ol li{
+    color: antiquewhite;
+    text-align: center;
+    font-size: 30px;
+}
+#BG {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    position: relative;
+    min-height: 100vh;
+}
+</style>
+<title>Syler's Page</title>
+</head>
+<body>
+  <video autoplay muted loop id="BG">
+    <source src="BG.mp4" type="video/mp4">
+  </video>
+</body>
+<nav>
+<ul>
+<li><a href="Syler.html"><i class="fa-solid fa-house"></i>Home</a></li>
+<li><a href="aboutme.html"><i class="fa-solid fa-font"></i>About</a></li>
+<li><a href="skills.html"><i class="fa-solid fa-gears"></i>Skills</a></li>
+<li><a href="Portfolio.html"><i class="fa-solid fa-folder"></i>Portfolio</a></li>
+<li><a href="contact.html"><i class="fa-solid fa-envelope"></i>Contacts</a></li>
+<li><a href="https://www.ciit.edu.ph/homepage/"><i class="fa-solid fa-school"></i><b>CIIT Homepage</b></a></li>
+</ul></nav>
+
+<section class="profile-card">
+<h1 class="about-title"><b>ABOUT</b></h1>
+<p style="font-size: 25px;"><b><i>
+Hello! I'm Syler Bustarde, a student who is passionate about technology, creativity, and learning new things. I enjoy exploring different ideas, improving my skills, and challenging myself to become a better version of who I am.
+
+I believe that every experience is an opportunity to learn and grow. In my free time, I enjoy listening to music, playing games, exploring technology, and spending time doing things that inspire me.
+
+My goal is to continue developing my knowledge and skills, especially in the world of technology and web development. I want to turn my ideas into reality and create something meaningful in the future.
+
+"Dream big, stay focused, and never stop improving."</p></b></i>
+<img src="Syler.png" alt="Syler Bustarde" class="profile-pic">
+</section>
+
+<section class="profile-card">
+<h1 class="about-title"><b>HOBBIES</b></h1>
+<p style="font-size: 25px;"><b><i>
+My hobbies are going to the gym and playing different sports. I enjoy playing badminton, basketball, and table tennis.
+ These activities help me stay active and healthy. I also love traveling to new places and exploring different environments. 
+ They make my free time enjoyable and meaningful.</p></b></i>
+<img src="Syler.png" alt="Syler Bustarde" class="profile-pic">
+</section>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</html>

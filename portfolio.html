@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style> 
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+  * {
+      box-sizing: border-box;
+    }
+marquee{
+  display: block;
+  width: 100vw;
+  margin-left: calc(50%-50vw);
+  margin-bottom: 3rem;
+  padding: 12px 0;
+
+  border-top: 5px solid
+  rgb(32, 255, 50);
+  border-bottom: 5px solid
+  rgb(32, 255, 50);
+
+  background: rgba(0, 0, 0, 0.8);
+
+  box-shadow: 
+  0 0 10px #54ff20,
+  0 0 25px #5dff3d,
+  0 0 15px #556fcd,
+  0 0 35px #556fcd;
+}
+
+@keyframes artscroll{
+  from{
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(-50%);
+  }
+
+}
+
+marquee img{
+  width: 330px;
+  height: 200px;
+  margin: 0 10px;
+  object-fit: cover;
+
+  border: 4px solid white;
+  border-radius: 12px;
+
+  box-shadow: 
+  0 0 8px white,
+  0 0 18px #556fcd,
+  0 0 30px #556fcd,;
+}
+.Portfolio h1{
+    color:  rgb(247, 175, 211);
+    text-align: center;
+    padding: 30px 50px;
+    background-color: rgba(0, 41, 18, 0.1);
+    backdrop-filter: blur(12px);
+    border-radius: 15px;
+     margin: 10px 60px;
+     border: 1px solid rgb(32, 255, 50);
+     font-family: "Press Start 2P", system-ui;
+}
+@keyframes fadeAnimation {
+    0% { opacity: 0;}
+    100% {opacity: 1;}
+}
+.Portfolio h1 {
+    animation-name: fadeAnimation;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1s;
+    animation-direction: normal;
+}
+
+.NC2 a {
+    margin: 0 8px;
+    padding: 10px;
+    border: none;
+    background: transparent;
+    font-size: 25px;
+    line-height: 1.6;
+    text-align: center;
+    margin: 10px 60px;
+    border-radius: 15px;
+    background-color: rgba(0, 41, 18, 0.1);
+    border: 1px solid  rgb(32, 255, 50);
+    text-decoration: none;
+    color: rgb(253, 224, 239);
+    backdrop-filter: blur(12px);
+  }
+  @keyframes fadeAnimation {
+    0% { opacity: 0;}
+    100% {opacity: 1;}
+}
+ .NC2 a {
+    animation-name: fadeAnimation;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1.4;
+    animation-iteration-count: 1s;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    display: block;
+}
+.NC2 h2{
+    color:  rgb(247, 175, 211);
+    text-align: center;
+    padding: 30px 50px;
+    background-color: rgba(0, 41, 18, 0.1);
+    backdrop-filter: blur(12px);
+    border-radius: 15px;
+     margin: 10px 60px;
+     border: 1px solid rgb(32, 255, 50);
+     font-family: "Press Start 2P", system-ui;
+}
+.NC2 a:hover{
+  background-color:  rgba(0, 255, 110, 0.219);
+}
+/* TABLET */
+    @media screen and (max-width: 900px) {
+      nav li a {
+        font-size: 12px;
+      }
+
+      nav li a i {
+        font-size: 15px;
+      }
+
+      .Portfolio h1 {
+        margin: 20px;
+        padding: 25px 15px;
+        font-size: 25px;
+      }
+
+      .NC2 a {
+        margin: 15px 20px;
+        padding: 15px 10px;
+        font-size: 20px;
+      }
+    }
+
+    /* MOBILE */
+    @media screen and (max-width: 600px) {
+      nav ul {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      nav li a {
+        min-height: 58px;
+        padding: 5px 2px;
+        font-size: 11px;
+      }
+
+      nav li a i {
+        font-size: 15px;
+      }
+
+      .Portfolio h1 {
+        margin: 10px;
+        padding: 25px 8px;
+        font-size: 19px;
+        line-height: 1.5;
+      }
+
+      .NC2 a {
+        margin: 15px 10px;
+        padding: 13px 8px;
+        font-size: 16px;
+        line-height: 1.4;
+      }
+    }
+
+    /* SMALL MOBILE */
+    @media screen and (max-width: 380px) {
+      nav ul {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      nav li a {
+        font-size: 13px;
+      }
+
+      .Portfolio h1 {
+        font-size: 17px;
+      }
+
+      .NC2 a {
+        font-size: 14px;
+      }
+    }
+  ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #33333381;
+}
+ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #111111;
+}
+  ul {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 50px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+ul a { color: azure;}
+ol li{
+    color: antiquewhite;
+    text-align: center;
+    font-size: 30px;
+}
+#BG {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    position: relative;
+    min-height: 100vh;
+}
+</style>
+<title>Syler's Page</title>
+</head>
+<body>
+  <video autoplay muted loop id="BG">
+    <source src="BG.mp4" type="video/mp4">
+  </video>
+</body>
+<nav>
+<ul>
+<li><a href="Syler.html"><i class="fa-solid fa-house"></i>Home</a></li>
+<li><a href="aboutme.html"><i class="fa-solid fa-font"></i>About</a></li>
+<li><a href="skills.html"><i class="fa-solid fa-gears"></i>Skills</a></li>
+<li><a href="Portfolio.html"><i class="fa-solid fa-folder"></i>Portfolio</a></li>
+<li><a href="contact.html"><i class="fa-solid fa-envelope"></i>Contacts</a></li>
+<li><a href="https://www.ciit.edu.ph/homepage/"><i class="fa-solid fa-school"></i><b>CIIT Homepage</b></a></li>
+</ul></nav>
+<section class="Portfolio">
+<h1 class="Portfolio"><i class="fa-solid fa-folder-open"></i><b>PORTFOLIO</b></h1>
+</section>
+<section3 class="NC2"> 
+<a href="NC2.html"><b>NATIONAL-CERTIFICATE-II</a></b>
+</section3>
+<section4 class="NC2"> 
+<a href="Poster making (1).html"><b>POSTERMAKING AWARD-2023</a></b>
+</section4>
+<section5 class="NC2"> 
+<a href="Sports.html"><b>SK SPORTS CERTIFICATION</a></b>
+</section5>
+<section6 class="NC2"> 
+<a href="hiphop.html"><b>HIP-HOP KING AWARD</a></b>
+</section6>
+<section7 class="NC2"> 
+<a href="Recognition.html"><b>Philippine Certificate of Recognition</a></b>
+</section7>
+<section8 class="NC2"> 
+<a href="Diploma.html"><b>Philippine Senior High School Diploma</a></b>
+</section8>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+<section9 class="NC2"> 
+<h2><b><i class="fa-solid fa-trophy"></i>ACHIVEMENTS</a></b></h2>
+</section9>
+
+<marquee direction="right">
+<img src="NC2.png"
+autoplay muted loop playsinline>
+<img src="Poster making.png"
+autoplay muted loop playsinline>
+<img src="Sports.png"
+autoplay muted loop playsinline>
+<img src="hiphop.png"
+autoplay muted loop playsinline>
+<img src="Recognition.png"
+autoplay muted loop playsinline>
+<img src="Diploma.png"
+autoplay muted loop playsinline>
+<img src="NC2.png"
+autoplay muted loop playsinline>
+<img src="Poster making.png"
+autoplay muted loop playsinline>
+<img src="Sports.png"
+autoplay muted loop playsinline>
+<img src="hiphop.png"
+autoplay muted loop playsinline>
+<img src="Recognition.png"
+autoplay muted loop playsinline>
+<img src="Diploma.png"
+autoplay muted loop playsinline>
+</marquee>
+
+<marquee direction="left">
+<img src="NC2.png"
+autoplay muted loop playsinline>
+<img src="Poster making.png"
+autoplay muted loop playsinline>
+<img src="Sports.png"
+autoplay muted loop playsinline>
+<img src="hiphop.png"
+autoplay muted loop playsinline>
+<img src="Recognition.png"
+autoplay muted loop playsinline>
+<img src="Diploma.png"
+autoplay muted loop playsinline>
+<img src="NC2.png"
+autoplay muted loop playsinline>
+<img src="Poster making.png"
+autoplay muted loop playsinline>
+<img src="Sports.png"
+autoplay muted loop playsinline>
+<img src="hiphop.png"
+autoplay muted loop playsinline>
+<img src="Recognition.png"
+autoplay muted loop playsinline>
+<img src="Diploma.png"
+autoplay muted loop playsinline>
+</marquee>
+</html>
